@@ -1,0 +1,9 @@
+# AntiSpawner Configuration
+permission-node: "antispawner.break"
+chance: 0.5  # от 0.0 до 1.0
+
+messages:
+  no-permission: "&cУ вас нет прав, чтобы сломать спавнер!"
+  failed-chance: "&cСпавнер устоял! Ваша удача подвела вас."
+  reload: "&aКонфиг перезагружен."
+  no-permission-reload: "&cУ вас нет прав на перезагрузку."
