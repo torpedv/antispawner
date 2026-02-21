@@ -1,4 +1,4 @@
-# AntiSpawner Configuration
+# AntiSpawner
 permission-node: "antispawner.break"
 chance: 0.5  # от 0.0 до 1.0
 
