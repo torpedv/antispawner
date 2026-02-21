@@ -13,10 +13,10 @@ public class AntiSpawnerPlugin extends JavaPlugin {
         configManager = new ConfigManager(this);
         configManager.loadConfig();
 
-        // Регистрация слушателя
+        // 
         getServer().getPluginManager().registerEvents(new SpawnerBreakListener(this), this);
 
-        // Регистрация команды
+        // посиси хуйца
         getCommand("asreload").setExecutor(new ReloadCommand(this));
 
         getLogger().info("AntiSpawner включён. Версия " + getDescription().getVersion());
