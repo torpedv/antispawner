@@ -17,7 +17,7 @@ public class SpawnerBreakListener implements Listener {
 
     @EventHandler
     public void onBlockBreak(BlockBreakEvent event) {
-        // Проверяем, что ломается спавнер
+        // 
         if (event.getBlock().getType() != Material.SPAWNER) {
             return;
         }
@@ -25,19 +25,19 @@ public class SpawnerBreakListener implements Listener {
         Player player = event.getPlayer();
         ConfigManager config = plugin.getConfigManager();
 
-        // Проверяем право
+        // 
         if (!player.hasPermission(config.getPermissionNode())) {
             event.setCancelled(true);
             player.sendMessage(org.bukkit.ChatColor.translateAlternateColorCodes('&', config.getNoPermMessage()));
             return;
         }
 
-        // Есть право — проверяем шанс
+        // 
         double chance = config.getChance();
         if (random.nextDouble() >= chance) { // не повезло
             event.setCancelled(true);
             player.sendMessage(org.bukkit.ChatColor.translateAlternateColorCodes('&', config.getFailedChanceMessage()));
         }
-        // иначе разрешаем ломать (ничего не делаем)
+        // 
     }
 }
