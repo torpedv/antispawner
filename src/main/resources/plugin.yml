@@ -3,7 +3,7 @@ version: 1.0.0
 main: ru.antispawner.AntiSpawnerPlugin
 api-version: 1.21
 description: Запрет на ломание спавнеров с шансом для привилегированных игроков
-author: YourName
+author: Torpedv
 commands:
   asreload:
     description: Перезагрузить конфигурацию плагина
