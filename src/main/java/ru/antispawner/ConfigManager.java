@@ -35,7 +35,7 @@ public class ConfigManager {
 
     public void reloadConfig() {
         plugin.reloadConfig();
-        loadConfig(); // перезагружаем значения
+        loadConfig(); // понюхай жопы чел
     }
 
     public String getPermissionNode() { return permissionNode; }
